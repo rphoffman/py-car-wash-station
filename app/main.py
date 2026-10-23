@@ -52,7 +52,8 @@ class CarWashStation:
         return round(total_income, 1)
 
     def rate_service(self, rating: int) -> None:
-        """Adds a new rating, recalculating the average rating and updating the rating count."""
+        """Adds a new rating, recalculating the 
+        average rating and updating the rating count."""
         total_score = self.average_rating * self.count_of_ratings + rating
         self.count_of_ratings += 1
         self.average_rating = round(total_score / self.count_of_ratings, 1)
